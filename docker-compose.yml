@@ -1,16 +1,16 @@
 version: '3'
 
 services:
-  backend:
-    image: backend-nestjs
-    container_name: backend
-    restart: always
-    ports:
-      - 3000:3000
-    volumes:
-      - ./.env:/app/.env
-    depends_on:
-      - mongo
+  # backend:
+  #   image: backend-nestjs
+  #   container_name: backend
+  #   restart: always
+  #   ports:
+  #     - 3000:3000
+  #   volumes:
+  #     - ./.env:/app/.env
+  #   depends_on:
+  #     - mongo
   mongo:
     image: mongo:4.4.4
     container_name: mongo
